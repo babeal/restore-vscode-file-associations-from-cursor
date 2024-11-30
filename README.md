@@ -1,6 +1,6 @@
 # Change File Associations back to VSCode
 
-The [Cursor AI Code Editor](https://www.cursor.com/) annoyingly sets all of the file extensions associated with VSCode to open with Cursor and changes all the default file specific icons to the cursor icon. Resetting them all manually is frustrating. So this script automates the process of changing the default application for file extensions associated with the `Cursor` app back to `Visual Studio Code`. It uses macOS utilities such as `lsregister` to identify file associations and `duti` to update them. After making changes, it restarts Finder and Dock to apply the updates immediately.
+The [Cursor AI Code Editor](https://www.cursor.com/) annoyingly sets all of the file extensions associated with VSCode to open with Cursor and changes all the default file specific icons to the cursor icon on MacOS. Resetting them all manually is frustrating. So this script automates the process of changing the default application for file extensions associated with the `Cursor` app back to `Visual Studio Code`. It uses macOS utilities such as `lsregister` to identify file associations and `duti` to update them. After making changes, it restarts Finder and Dock to apply the updates immediately.
 
 Even after running the script, Finder will still show the Cursor icon on some of the files. Right click, and select "Get Info". The correct icon should be displayed in the left corner and then will update in the finder. Close and reopen Finder and it should update the rest. If there are some stragglers, rinse and repeat.
 
